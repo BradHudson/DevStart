@@ -1,3 +1,46 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+.top-area{
+  background-image: url("https://s3.amazonaws.com/media.launchrockstaging.com/assets/sites/site-7bgg87nssq84h00oucinw4fe3/53euqh-product-background.jpg");
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-position: 50% 50%;
+  height: 60%;
+}
+
+.site-block{
+  padding-top: 100px;
+  padding-right: 0px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+
+.top-area h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 4.375rem;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.top-area p {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+.headers{
+  margin-left: 20px;
+}
