@@ -5,7 +5,6 @@
 h1, h2, h3, h4, h5, p {
   font-weight: 100;
   color: black;
-  //font-family: "Montserrat", sans-serif;
   font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
 }
 
@@ -47,8 +46,8 @@ h1, h2, h3, h4, h5, p {
 
 .top-area h1 {
   font-size: 4.375rem;
-  font-weight: 700 !important;
-  color: #FF5A5F !important;
+  font-weight: 700;
+  color: #FF5A5F;
 }
 
 .top-area .bigger-p {
@@ -58,7 +57,6 @@ h1, h2, h3, h4, h5, p {
 .top-area p {
   font-size: 24px;
   font-weight: 300;
-  //color: white;
 }
 
 .headers{
@@ -81,8 +79,11 @@ h1, h2, h3, h4, h5, p {
 
 .middle-area h1 {
   font-size: 3.750rem;
-  //font-weight: bold;
   text-align: center;
-  color: #333333;
+}
+
+.middle-area h4 {
+  font-weight: 700;
+  color: #FF5A5F;
 }
 
