@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-* {
+h1, h2, h3, h4, h5, p {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -26,7 +26,6 @@
 }
 
 .top-area h1 {
-  font-family: "Montserrat", sans-serif;
   font-size: 4.375rem;
   font-weight: bold;
   margin-top: 20px;
@@ -37,10 +36,15 @@
 .top-area p {
   font-size: 25px;
   font-weight: bold;
-  font-family: "Montserrat", sans-serif;
   color: white;
 }
 
 .headers{
   margin-left: 20px;
+}
+
+.middle-area h1 {
+  font-size: 4.375rem;
+  font-weight: bold;
+  text-align: center;
 }
