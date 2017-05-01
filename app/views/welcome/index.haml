@@ -3,20 +3,36 @@
     .small-3.show-for-small-only.end.columns#top-image
       = image_tag("https://www.thehvca.co.uk/wp-content/uploads/2017/03/rocket-icon.png")
   .row
-    .small-12.medium-5.columns.headers
+    .small-12.medium-6.columns.headers
       %p.bigger-p
         Introducing
       %h1
         Dev Start
       %p
         Professional Developers preparing your children for a future in technology.
-      .row
-        .small-12.columns
-          .button
-            SIGN UP NOW
-    .small-12.hide-for-small-only.medium-3.medium-offset-1.columns#image
+      -#.row
+      -#  .small-12.columns
+      -#    .button
+      -#      SIGN UP NOW
+    .small-12.hide-for-small-only.medium-3.columns#image
       = image_tag("https://www.thehvca.co.uk/wp-content/uploads/2017/03/rocket-icon.png")
-    %hr
+  .row
+    = form_for(@user, url: signup_path) do |f|
+      .small-12.columns
+        = render 'shared/error_messages'
+      .small-12.medium-5.columns
+        = f.label :name
+        = f.text_field :name, class: 'form-control'
+      .small-12.medium-5.columns
+        = f.label :email
+        = f.email_field :email, class: 'form-control'
+      -#= f.label :password
+      -#= f.password_field :password, class: 'form-control'
+      -#= f.label :password_confirmation, "Confirmation"
+      -#= f.password_field :password_confirmation, class: 'form-control'
+      .small-12.medium-2.columns#signup-button
+        = f.submit "Create my account", class: "button"
+%hr
 .middle-area
   .row
     .small-12.small-centered.columns

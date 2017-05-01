@@ -2,6 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+hr {
+  padding-bottom: 15px;
+  //padding-bottom: 30px;
+}
 h1, h2, h3, h4, h5, p {
   font-weight: 100;
   color: black;
@@ -11,13 +15,18 @@ h1, h2, h3, h4, h5, p {
 //Top Area
 
 #image{
-  margin-top: 40px;
+  //margin-top: 40px;
+  float: left;
 }
 
 #top-image{
   padding-top: 30px;
   padding-bottom: 40px;
-  margin-left: 20px;
+  //margin-left: 20px;
+}
+
+#signup-button{
+  margin-top: 20px;
 }
 
 .top-area{
@@ -60,7 +69,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .headers{
-  margin-left: 20px;
+  //margin-left: 20px;
 }
 
 //medium screen and up
