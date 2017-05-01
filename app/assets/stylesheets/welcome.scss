@@ -110,3 +110,18 @@ h1, h2, h3, h4, h5, p {
   color: #FF5A5F;
 }
 
+.profile h4{
+  color: black;
+  font-weight: 300;
+  text-align: center;
+}
+
+.profile img{
+  min-height: 250px;
+  min-width: 200px;
+  max-height: 270px;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
