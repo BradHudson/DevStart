@@ -3,8 +3,12 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 h1, h2, h3, h4, h5, p {
+  font-weight: 100;
   font-family: "Montserrat", sans-serif;
+  //font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
 }
+
+//Top Area
 
 .top-area{
   background-image: url("https://s3.amazonaws.com/media.launchrockstaging.com/assets/sites/site-7bgg87nssq84h00oucinw4fe3/53euqh-product-background.jpg");
@@ -15,7 +19,7 @@ h1, h2, h3, h4, h5, p {
   background-position-x: 50%;
   background-position-y: 50%;
   background-position: 50% 50%;
-  height: 60%;
+  height: 70%;
 }
 
 .site-block{
@@ -25,17 +29,27 @@ h1, h2, h3, h4, h5, p {
   padding-left: 10px;
 }
 
+.top-area .button {
+  font-weight: bold;
+  font-size: 1em;
+
+}
+
 .top-area h1 {
   font-size: 4.375rem;
-  font-weight: bold;
+  //font-weight: bold;
   margin-top: 20px;
   margin-bottom: 10px;
   color: white;
 }
 
+.top-area .bigger-p {
+  font-size: 30px;
+}
+
 .top-area p {
-  font-size: 25px;
-  font-weight: bold;
+  font-size: 24px;
+  //font-weight: bold;
   color: white;
 }
 
@@ -43,8 +57,11 @@ h1, h2, h3, h4, h5, p {
   margin-left: 20px;
 }
 
+//Middle Area
+
 .middle-area h1 {
-  font-size: 4.375rem;
-  font-weight: bold;
+  font-size: 3.750rem;
+  //font-weight: bold;
   text-align: center;
+  color: #333333;
 }
