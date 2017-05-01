@@ -10,10 +10,6 @@
         Dev Start
       %p
         Professional Developers preparing your children for a future in technology.
-      -#.row
-      -#  .small-12.columns
-      -#    .button
-      -#      SIGN UP NOW
     .small-12.hide-for-small-only.medium-3.columns#image
       = image_tag("https://www.thehvca.co.uk/wp-content/uploads/2017/03/rocket-icon.png")
   .row
@@ -26,36 +22,49 @@
       .small-12.medium-5.columns
         = f.label :email
         = f.email_field :email, class: 'form-control'
-      -#= f.label :password
-      -#= f.password_field :password, class: 'form-control'
-      -#= f.label :password_confirmation, "Confirmation"
-      -#= f.password_field :password_confirmation, class: 'form-control'
       .small-12.medium-2.columns#signup-button
-        = f.submit "Create my account", class: "button"
+        = f.submit "SIGN UP", class: "button"
 %hr
 .middle-area
   .row
     .small-12.small-centered.columns
-      %h1
+      %h1.bump
         Why Choose Dev Start?
-  %hr
   .reasons
     .row
       .small-12.medium-4.columns
-        %h4
-          Professional Instructors
+        .row.reason-header
+          .small-1.columns.image
+            = image_tag("https://cdn0.iconfinder.com/data/icons/back-to-school/90/school-learn-study-teacher-teaching-512.png")
+          .small-10.end.columns
+            %h4
+              Professional Instructors
         %p
           We are a team of software engineers with computer science backgrounds who currently work for Careerbuilder.
           We have a passion for building great software and want to inspire the next generation of engineers and programmers.
       .small-12.medium-4.columns
-        %h4
-          Excellent Education
+        .row.reason-header
+          .small-1.columns.image
+            = image_tag("http://media.rusbase.com/upload_tmp/use4.png")
+          .small-10.end.columns
+            %h4
+              Excellent Education
         %p
           Building a solid foundation of software development principles will enable your child to pursue any area of technology.
           We will be teaching with verified courses and resources that are used at major universities.
       .small-12.medium-4.columns
-        %h4
-          Affordable and Dependable
+        .row.reason-header
+          .small-1.columns.image
+            = image_tag("http://www.myashevillerealestate.com/images/cms/148/photo-1.png")
+          .small-10.end.columns
+            %h4
+              Affordable and Dependable
         %p
           Our ultimate goal is to inspire at least one child to go into technology and give them a foundation that will help them succeed.
           We are going to make these courses both affordable and excellent.
+  %hr
+  .row
+    .small-12.medium-6.medium-centered
+      %h1.bump
+        Meet the Team
+  %hr
