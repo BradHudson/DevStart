@@ -1,14 +1,130 @@
 .top-area.site-block
   .row
-    .small-12.medium-5.end.columns.headers
-      %p
+    .small-3.show-for-small-only.end.columns#top-image
+      = image_tag("https://www.thehvca.co.uk/wp-content/uploads/2017/03/rocket-icon.png")
+  .row
+    .small-12.medium-6.columns.headers
+      %p.bigger-p
         Introducing
       %h1
         Dev Start
       %p
-        Inspiring and empowering children for a future in technology.
+        Professional Developers preparing your children for a future in technology.
+    .small-12.hide-for-small-only.medium-3.columns#image
+      = image_tag("https://www.thehvca.co.uk/wp-content/uploads/2017/03/rocket-icon.png")
+  %hr
+  .row
+    .small-12.columns
+      %h3
+        Dev Start is a new idea that is still being organized.
+        Sign Up using the form below for updates and information on future classes.
+    = form_for(@user, url: signup_path) do |f|
+      .small-12.columns
+        = render 'shared/error_messages'
+      .small-12.medium-6.columns
+        = f.label :name
+        = f.text_field :name, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :email
+        = f.email_field :email, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :phone_number
+        = f.phone_field :phone_number, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :age
+        = f.number_field :age, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :number_of_children
+        = f.number_field :number_of_children, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :location
+        = f.text_field :location, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :preferred_day
+        = f.text_field :preferred_day, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :course_preference
+        = f.text_field :course_preference, class: 'form-control'
+      .small-12.columns
+        = f.label :comments
+        = f.text_field :comments, class: 'form-control'
+      .small-12.columns#signup-button
+        = f.submit "SIGN UP", class: "button"
+%hr
 .middle-area
   .row
     .small-12.small-centered.columns
-      %h1
+      %h1.bump
         Why Choose Dev Start?
+  .reasons
+    .row
+      .small-12.medium-4.columns
+        .row.reason-header
+          .small-1.columns.image
+            = image_tag("https://cdn0.iconfinder.com/data/icons/back-to-school/90/school-learn-study-teacher-teaching-512.png")
+          .small-10.end.columns
+            %h4
+              Professional Instructors
+        %p
+          We are a team of software engineers with computer science backgrounds who currently work for Careerbuilder.
+          We have a passion for building great software and want to inspire the next generation of engineers and programmers.
+      .small-12.medium-4.columns
+        .row.reason-header
+          .small-1.columns.image
+            = image_tag("http://media.rusbase.com/upload_tmp/use4.png")
+          .small-10.end.columns
+            %h4
+              Excellent Education
+        %p
+          Building a solid foundation of software development principles will enable your child to pursue any area of technology.
+          We will be teaching with verified courses and resources that are used at major universities.
+      .small-12.medium-4.columns
+        .row.reason-header
+          .small-1.columns.image
+            = image_tag("http://www.myashevillerealestate.com/images/cms/148/photo-1.png")
+          .small-10.end.columns
+            %h4
+              Affordable and Dependable
+        %p
+          Our ultimate goal is to inspire at least one child to go into technology and give them a foundation that will help them succeed.
+          We are going to make these courses both affordable and excellent.
+  %hr
+  .row
+    .small-12.medium-6.medium-centered
+      %h1.bump
+        Meet the Team
+  .row
+    .small-12.medium-4.columns.profile
+      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/x5ysbh-bradimage3.jpg")
+      %h4
+        Brad Hudson
+      %p
+        Brad is a software engineer for Careerbuilder. He received his undergraduate from the University of North Georgia.
+        He has experience with Ruby on Rails, C#, and AWS.
+    .small-12.medium-4.columns.profile
+      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/74hh3e-yudiimage.jpg")
+      %h4
+        Yudi Singh
+      %p
+        Yudi is a software engineer for Careerbuilder. He received his undergraduate from the University of Alabama.
+        He is currently pursuing his masters degree in computer science from Georgia Tech.
+    .small-12.medium-4.end.columns.profile
+      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/0xqzaw-naveenimage.jpg")
+      %h4
+        Naveen Chegireddy
+      %p
+        Naveen is a mobile apps software engineer for Careerbuilder. He received his undergraduate from Georgia Tech and is
+        currently one of two engineers who maintain and build the Careerbuilder apps for both IOS and Android.
+  %hr
+  .row.locations
+    .small-12.medium-6.medium-centered
+      %h1.bump
+        Our Locations*
+      %h2
+        Johns Creek
+      %h2
+        Suwanee
+      %h2
+        Cumming
+      %p
+        *The exact location and times are yet to be established. Please Sign Up for updates as we release more information.

@@ -2,12 +2,44 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+hr {
+  padding-bottom: 15px;
+  //padding-bottom: 30px;
+}
+
+.bump{
+  padding-bottom: 10px;
+}
+
 h1, h2, h3, h4, h5, p {
-  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: black;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+}
+
+//Top Area
+
+#image{
+  //margin-top: 40px;
+  float: left;
+}
+
+#top-image{
+  padding-top: 30px;
+  padding-bottom: 40px;
+  //margin-left: 20px;
+}
+
+#signup-button{
+  margin-top: 20px;
+}
+
+#signup-button input{
+  width: 100%;
 }
 
 .top-area{
-  background-image: url("https://s3.amazonaws.com/media.launchrockstaging.com/assets/sites/site-7bgg87nssq84h00oucinw4fe3/53euqh-product-background.jpg");
+  //background-image: url("https://s3.amazonaws.com/media.launchrockstaging.com/assets/sites/site-7bgg87nssq84h00oucinw4fe3/53euqh-product-background.jpg");
   background-repeat: repeat;
   background-attachment: scroll;
   background-size: cover;
@@ -15,36 +47,93 @@ h1, h2, h3, h4, h5, p {
   background-position-x: 50%;
   background-position-y: 50%;
   background-position: 50% 50%;
-  height: 60%;
 }
 
 .site-block{
-  padding-top: 100px;
   padding-right: 0px;
   padding-bottom: 30px;
   padding-left: 10px;
 }
 
+.top-area .button {
+  font-weight: bold;
+  font-size: 1em;
+
+}
+
 .top-area h1 {
   font-size: 4.375rem;
-  font-weight: bold;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  color: white;
+  font-weight: 700;
+  color: #FF5A5F;
+}
+
+.top-area .bigger-p {
+  font-size: 30px;
 }
 
 .top-area p {
-  font-size: 25px;
-  font-weight: bold;
-  color: white;
+  font-size: 24px;
+  font-weight: 300;
 }
 
 .headers{
-  margin-left: 20px;
+  //margin-left: 20px;
 }
 
+.reason-header .columns{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.reason-header .image{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+//medium screen and up
+@media only screen and (min-width: 40.063em) {
+  .site-block {
+    margin-top: 100px;
+  }
+
+  .top-area h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+//Middle Area
+
 .middle-area h1 {
-  font-size: 4.375rem;
-  font-weight: bold;
+  font-size: 3.750rem;
   text-align: center;
 }
+
+.middle-area h4 {
+  font-weight: 700;
+  color: #FF5A5F;
+}
+
+.profile h4{
+  color: black;
+  font-weight: 300;
+  text-align: center;
+}
+
+.profile img{
+  min-height: 250px;
+  min-width: 200px;
+  max-height: 270px;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+.locations h2{
+  text-align: center;
+}
+
+.locations p{
+  text-align: center;
+}
+
