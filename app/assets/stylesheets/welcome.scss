@@ -67,6 +67,28 @@ h1, h2, h3, h4, h5, p {
   color: #FF5A5F;
 }
 
+//successful signup
+
+.successful-signup h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #FF5A5F;
+}
+
+.successful-signup h3{
+  font-size: 2em;
+}
+
+.successful-signup .button {
+  width: 100%;
+}
+
+.successful-signup p{
+  font-size: 1.5rem;
+}
+
+//end successful signup
+
 .top-area .bigger-p {
   font-size: 30px;
 }
@@ -100,7 +122,23 @@ h1, h2, h3, h4, h5, p {
     margin-top: 20px;
     margin-bottom: 10px;
   }
+
+  //successful signup medium up
+
+  .successful-signup {
+    margin-top: 100px;
+  }
+
+  .successful-signup h1 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    color: #FF5A5F;
+  }
+
+  //end successful medium up
 }
+
+//end medium
 
 //Middle Area
 
