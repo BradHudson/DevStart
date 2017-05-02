@@ -6,10 +6,10 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      #flash[:success] = "Welcome to the Sample App!"
-      redirect_to '/'
+      redirect_to '/success'
     else
-      render 'new'
+      flash[:error] = "There was an Error Saving your submission. Please resubmit with Name and Email."
+      redirect_to '/'
     end
   end
 
