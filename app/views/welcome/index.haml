@@ -12,17 +12,43 @@
         Professional Developers preparing your children for a future in technology.
     .small-12.hide-for-small-only.medium-3.columns#image
       = image_tag("https://www.thehvca.co.uk/wp-content/uploads/2017/03/rocket-icon.png")
+  %hr
   .row
+    .small-12.columns
+      %h3
+        Dev Start is a new idea that is still being organized.
+        Sign Up using the form below for updates and information on future classes.
     = form_for(@user, url: signup_path) do |f|
       .small-12.columns
         = render 'shared/error_messages'
-      .small-12.medium-5.columns
+      .small-12.medium-6.columns
         = f.label :name
         = f.text_field :name, class: 'form-control'
-      .small-12.medium-5.columns
+      .small-12.medium-6.columns
         = f.label :email
         = f.email_field :email, class: 'form-control'
-      .small-12.medium-2.columns#signup-button
+      .small-12.medium-6.columns
+        = f.label :phone_number
+        = f.phone_field :phone_number, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :age
+        = f.number_field :age, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :number_of_children
+        = f.number_field :number_of_children, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :location
+        = f.text_field :location, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :preferred_day
+        = f.text_field :preferred_day, class: 'form-control'
+      .small-12.medium-6.columns
+        = f.label :course_preference
+        = f.text_field :course_preference, class: 'form-control'
+      .small-12.columns
+        = f.label :comments
+        = f.text_field :comments, class: 'form-control'
+      .small-12.columns#signup-button
         = f.submit "SIGN UP", class: "button"
 %hr
 .middle-area
