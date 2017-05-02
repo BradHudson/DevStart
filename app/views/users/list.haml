@@ -1,6 +1,36 @@
 .row
   .small-12.columns
     %h1
-      Users
+      Users Stats:
+    %p
+      = "Total Users: #{ @users.count }"
+    %hr
     = User.all.each do |u|
-      = u.name
+      %h2
+        = "User #{ u.id }"
+      %p
+        = "Name: #{ u.name }"
+        %br
+        = "Email: #{ u.email }"
+        - unless u.number_of_children.blank?
+          %br
+          = "number_of_children: #{ u.number_of_children }"
+        - unless u.age.blank?
+          %br
+          = "age: #{ u.age }"
+        - unless u.location.blank?
+          %br
+          = "location: #{ u.location }"
+        - unless u.phone_number.blank?
+          %br
+          = "phone_number: #{ u.phone_number }" unless u.phone_number.blank?
+        - unless u.preferred_day.blank?
+          %br
+          = "preferred_day: #{ u.preferred_day }" unless u.preferred_day.blank?
+        - unless u.course_preference.blank?
+          %br
+          = "course_preference: #{ u.course_preference }" unless u.course_preference.blank?
+        - unless u.comments.blank?
+          %br
+          = "comments: #{ u.comments }" unless u.comments.blank?
+          
