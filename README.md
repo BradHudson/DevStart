@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Dev Start is a landing page for a service where professional software
+engineers will teach children to program.
 
 Things you may want to cover:
 
-* Ruby version
+* Rails
 
-* System dependencies
+* Foundation
 
-* Configuration
+* Haml
 
-* Database creation
+* PostgreSQL
 
-* Database initialization
+* Hosted on Heroku
 
-* How to run the test suite
+* No tests yet
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* No CI yet
