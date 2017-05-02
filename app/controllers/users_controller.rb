@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   end
 
   def list
-    @users = User.all
+    @users = User.find_each
   end
 
   private

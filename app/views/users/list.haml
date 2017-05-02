@@ -5,7 +5,7 @@
     %p
       = "Total Users: #{ @users.count }"
     %hr
-    = User.all.each do |u|
+    = @users.each do |u|
       %h2
         = "User #{ u.id }"
       %p
@@ -33,4 +33,3 @@
         - unless u.comments.blank?
           %br
           = "comments: #{ u.comments }" unless u.comments.blank?
-          
