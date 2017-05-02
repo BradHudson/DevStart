@@ -4,13 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Dev Start | Preparing Children for Technology" %></title>
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
+    
+    <%= favicon_link_tag 'favicon-32x32.png' %>
+    <meta name="theme-color" content="#ffffff">
   </head>
 
   <body>
