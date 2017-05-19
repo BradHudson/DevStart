@@ -74,6 +74,12 @@ h1, h2, h3, h4, h5, p {
   color: #FF5A5F;
 }
 
+.top-location h1{
+  font-weight: 100;
+  color: black;
+  font-size: 3rem;
+}
+
 //successful signup
 
 .successful-signup h1 {
@@ -180,5 +186,9 @@ h1, h2, h3, h4, h5, p {
 
 .locations p{
   text-align: center;
+}
+
+.bold{
+  font-weight: 400;
 }
 

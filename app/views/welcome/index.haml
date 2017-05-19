@@ -9,51 +9,49 @@
       %h1
         Dev Start
       %p
-        Professional Developers preparing your children for a future in technology.
+        Professional Software Engineers teaching young adults how to program in Johns Creek.
     .small-12.hide-for-small-only.medium-3.columns#image
       = image_tag("https://nhabitus.ch/wp-content/uploads/2014/05/rocket.png")
   %hr
   .row
-    .small-12.columns
-      %h3
-        Dev Start is a new idea that is still being organized.
-        Sign Up using the form below for updates and information on future classes.
-    = form_for(@user, url: signup_path) do |f|
+    .small-12.medium-5.columns
       .small-12.columns
-        = render 'shared/error_messages'
-      .small-12.medium-6.columns
-        = 'Name(Required)'
-        = f.text_field :name, class: 'form-control'
-      .small-12.medium-6.columns
-        = 'Email(Required)'
-        = f.email_field :email, class: 'form-control'
-      .small-12.medium-6.columns
-        = 'Phone Number*'
-        = f.phone_field :phone_number, class: 'form-control'
-      .small-12.medium-6.columns
-        = 'Age of Youngest Child*'
-        = f.number_field :age, class: 'form-control'
-      .small-12.medium-6.columns
-        = 'Number of Children to Enroll*'
-        = f.number_field :number_of_children, class: 'form-control'
-      .small-12.medium-6.columns
-        = 'Desired School Location*'
-        = f.text_field :location, class: 'form-control'
-      .small-12.medium-6.columns
-        = 'Preferred Day(Saturday, Sunday, Weeknight)*'
-        = f.text_field :preferred_day, class: 'form-control'
-      .small-12.medium-6.columns
-        = 'Course Preference(Scratch,Java,Python,Mobile,Web)*'
-        = f.text_field :course_preference, class: 'form-control'
-      .small-12.columns
-        = 'Comments*'
-        = f.text_field :comments, class: 'form-control'
-      .small-12.columns
-        * Optional Fields
-      .small-12.columns#signup-button
-        = f.submit "SIGN UP", class: "button"
+        %h2
+          Reserve Your Spot Today!
+      = form_for(@user, url: signup_path) do |f|
+        .small-12.columns
+          = render 'shared/error_messages'
+        .small-12.columns
+          = 'Name(Required)'
+          = f.text_field :name, class: 'form-control'
+        .small-12.columns
+          = 'Email(Required)'
+          = f.email_field :email, class: 'form-control'
+        .small-12.columns
+          = 'Phone Number'
+          = f.phone_field :phone_number, class: 'form-control'
+        .small-12.columns#signup-button
+          = f.submit "SIGN UP", class: "button"
+    .small-12.medium-6.columns.hide-for-small-only.top-location
+      %h1.bump
+        Starting
+        %span.bold
+          June 17th
+        at the Johns Creek Arts Center
+      %p
+        = image_tag("http://i152.photobucket.com/albums/s182/Charles_Walls/JohnsCreekArtsCenterlogo.jpg")
 %hr
 .middle-area
+  .row.locations.show-for-small-only
+    .small-12.medium-6.medium-centered.columns
+      %h1.bump
+        Starting
+        %span.bold
+          June 17th
+        at the Johns Creek Arts Center
+      %p
+        = image_tag("http://i152.photobucket.com/albums/s182/Charles_Walls/JohnsCreekArtsCenterlogo.jpg")
+    %hr
   .row
     .small-12.small-centered.columns
       %h1.bump
@@ -68,6 +66,7 @@
             %h4
               Professional Instructors
         %p
+          Learning how to program from professionals who are paid do it every single day will properly prepare you for software development in the real world.
           We are a team of software engineers with computer science backgrounds who currently work for Careerbuilder.
           We have a passion for building great software and want to inspire the next generation of engineers and programmers.
       .small-12.medium-4.columns
@@ -78,8 +77,8 @@
             %h4
               Excellent Education
         %p
-          Building a solid foundation of software development principles will enable your child to pursue any area of technology.
-          We will be teaching with verified courses and resources that are used at major universities.
+          We will be teaching from verified courses and resources that are used at major universities such as MIT and Stanford.
+          This will give you a foundation to pursue any area of technology. We want to see each and every student suceed so will be tailoring the education to the student.
       .small-12.medium-4.columns
         .row.reason-header
           .small-1.columns.image
@@ -88,8 +87,8 @@
             %h4
               Affordable and Dependable
         %p
-          Our ultimate goal is to inspire at least one child to go into technology and give them a foundation that will help them succeed.
-          We are going to make these courses both affordable and excellent.
+          Our goal is to inspire more young adults to go into technology and give them a foundation that will help them succeed.
+          We are going to make these courses both affordable and excellent. Contact us today!
   %hr
   .row
     .small-12.medium-6.medium-centered
@@ -117,16 +116,3 @@
       %p
         Naveen is a mobile apps software engineer for Careerbuilder. He received his undergraduate from Georgia Tech and is
         currently one of two engineers who maintain and build the Careerbuilder apps for both IOS and Android.
-  %hr
-  .row.locations
-    .small-12.medium-6.medium-centered
-      %h1.bump
-        Our Locations*
-      %h2
-        Johns Creek
-      %h2
-        Suwanee
-      %h2
-        Cumming
-      %p
-        *The exact location and times are yet to be established. Please Sign Up for updates as we release more information.
