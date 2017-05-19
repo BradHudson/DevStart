@@ -74,10 +74,18 @@ h1, h2, h3, h4, h5, p {
   color: #FF5A5F;
 }
 
+.top-location {
+  border-right-style: ridge;
+}
+
 .top-location h1{
   font-weight: 100;
   color: black;
   font-size: 3rem;
+}
+
+.input-field{
+  margin-top: 1em;
 }
 
 //successful signup

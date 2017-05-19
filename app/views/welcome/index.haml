@@ -14,24 +14,6 @@
       = image_tag("https://nhabitus.ch/wp-content/uploads/2014/05/rocket.png")
   %hr
   .row
-    .small-12.medium-5.columns
-      .small-12.columns
-        %h2
-          Reserve Your Spot Today!
-      = form_for(@user, url: signup_path) do |f|
-        .small-12.columns
-          = render 'shared/error_messages'
-        .small-12.columns
-          = 'Name(Required)'
-          = f.text_field :name, class: 'form-control'
-        .small-12.columns
-          = 'Email(Required)'
-          = f.email_field :email, class: 'form-control'
-        .small-12.columns
-          = 'Phone Number'
-          = f.phone_field :phone_number, class: 'form-control'
-        .small-12.columns#signup-button
-          = f.submit "SIGN UP", class: "button"
     .small-12.medium-6.columns.hide-for-small-only.top-location
       %h1.bump
         Starting
@@ -40,6 +22,24 @@
         at the Johns Creek Arts Center
       %p
         = image_tag("http://i152.photobucket.com/albums/s182/Charles_Walls/JohnsCreekArtsCenterlogo.jpg")
+    .small-12.medium-6.columns
+      .small-12.columns
+        %h2
+          Reserve Your Spot Today!
+      = form_for(@user, url: signup_path) do |f|
+        .small-12.columns
+          = render 'shared/error_messages'
+        .small-12.input-field.columns
+          = 'Name(Required)'
+          = f.text_field :name, class: 'form-control'
+        .small-12.input-field.columns
+          = 'Email(Required)'
+          = f.email_field :email, class: 'form-control'
+        .small-12.input-field.columns
+          = 'Phone Number'
+          = f.phone_field :phone_number, class: 'form-control'
+        .small-12.columns#signup-button
+          = f.submit "SIGN UP", class: "button"
 %hr
 .middle-area
   .row.locations.show-for-small-only
