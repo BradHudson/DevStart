@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, p {
 
 //Top Area
 
+.nav-list{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
 #image{
   //margin-top: 40px;
   float: left;
@@ -212,4 +218,3 @@ h1, h2, h3, h4, h5, p {
   }
 
 }
-
