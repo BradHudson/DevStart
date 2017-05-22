@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, p {
 
 //Top Area
 
+.nav-list{
+  display: inline;
+  list-style-type: none;
+  padding-right: 20px;
+}
+
 #image{
   //margin-top: 40px;
   float: left;
@@ -74,10 +80,18 @@ h1, h2, h3, h4, h5, p {
   color: #FF5A5F;
 }
 
+.top-location {
+  border-right-style: ridge;
+}
+
 .top-location h1{
   font-weight: 100;
   color: black;
   font-size: 3rem;
+}
+
+.input-field{
+  margin-top: 1em;
 }
 
 //successful signup
@@ -125,34 +139,6 @@ h1, h2, h3, h4, h5, p {
   margin-right: 10px;
 }
 
-//medium screen and up
-@media only screen and (min-width: 40.063em) {
-  .site-block {
-    margin-top: 100px;
-  }
-
-  .top-area h1 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  //successful signup medium up
-
-  .successful-signup {
-    margin-top: 100px;
-  }
-
-  .successful-signup h1 {
-    font-size: 4.375rem;
-    font-weight: 700;
-    color: #FF5A5F;
-  }
-
-  //end successful medium up
-}
-
-//end medium
-
 //Middle Area
 
 .middle-area h1 {
@@ -192,3 +178,43 @@ h1, h2, h3, h4, h5, p {
   font-weight: 400;
 }
 
+//medium screen and up
+@media only screen and (min-width: 40.063em) {
+  .site-block {
+    margin-top: 100px;
+  }
+
+  .top-area h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  //successful signup medium up
+
+  .successful-signup {
+    margin-top: 100px;
+  }
+
+  .successful-signup h1 {
+    font-size: 4.375rem;
+    font-weight: 700;
+    color: #FF5A5F;
+  }
+
+  //end successful medium up
+}
+
+//end medium
+
+//small screen only
+@media only screen and (max-width: 40em) {
+
+  .middle-area h1{
+    font-size: 2.3rem;
+  }
+
+  .top-area h2{
+    font-size: 2rem;
+  }
+
+}
