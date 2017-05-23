@@ -1,7 +1,23 @@
+.row
+  .small-4.show-for-small-only.columns.nav-logo
+    = image_tag("logo.png")
+  .small-4.small-offset-4.columns.nav-dots
+    = image_tag("http://tistory3.daumcdn.net/tistory/1986024/ba71592b72ad4bc2ba1e07c172c9c716", id: 'dots-btn')
+    .small-6.small-offset-6.columns
+      .menu
+        %ul
+          %li
+            Location
+          %li
+            Classes & Pricing
+          %li
+            Why Dev Start?
+          %li
+            The Team
+          %li
+            Contact
+
 .top-area.site-block
-  .row
-    .small-4.show-for-small-only.end.columns#top-image
-      = image_tag("logo.png")
   .row
     .small-12.medium-6.columns.headers
       %p.bigger-p
@@ -66,7 +82,7 @@
     .small-12.medium-8.columns
       %p
         We focus on Scratch, the programming language developed at the MIT Media Lab. With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community. Scratch helps young people learn to think creatively, reason systematically, and work collaboratively — essential skills for life in the 21st century.
-      %h2
+      %h3
         Options:
       %ul
         %li

@@ -7,6 +7,37 @@ hr {
   //padding-bottom: 30px;
 }
 
+.nav-dots img {
+  margin-top: 20px;
+  margin-right: 20px;
+  padding-top: 10px;
+  max-height: 50px;
+}
+
+.menu{
+  position: fixed;
+  //display: none;
+  margin-top: 5px;
+  background-color: black;
+}
+
+.menu ul{
+  margin: 0;
+}
+
+.menu li{
+  border-bottom-color: white;
+  border-bottom-style: ridge;
+  padding: 10px;
+  text-align: left;
+  color: white;
+  list-style-type: none;
+}
+
+.nav-dots {
+  text-align: right;
+}
+
 .alert-error{
   color: white;
   background-color: red;
@@ -185,7 +216,7 @@ h1, h2, h3, h4, h5, p {
 //medium screen and up
 @media only screen and (min-width: 40.063em) {
   .site-block {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   .top-area h1 {
@@ -219,6 +250,10 @@ h1, h2, h3, h4, h5, p {
 
   .top-area h2{
     font-size: 2rem;
+  }
+
+  .top-area {
+    margin-top: 1.5rem;
   }
 
 }
