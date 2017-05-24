@@ -257,7 +257,9 @@
 .hero-image{
   padding-top: 50px;
   padding-bottom: 50px;
-  background-color: #3A3D5A;
+  background-image: url("Intro-Background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .hero-image h2{
   color: white;
@@ -280,6 +282,7 @@
 .pitch{
   text-align: center;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .pitch img{
   max-height: 100px;
@@ -291,6 +294,53 @@
 .pitch .starting-date{
   font-weight: 500;
   color: #3A3D5A;
+}
+
+//courses
+.courses{
+  background-color: #DFECFB;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.courses .course-intro{
+  text-align: center;
+}
+.courses .course-intro h3{
+  color: #464646;
+}
+.courses .course-intro p{
+  color: #464646;
+  font-weight: 200;
+}
+.courses .course-descriptions{
+  text-align: center;
+}
+.courses .course-descriptions h4{
+  text-align: center;
+  color: #464646;
+}
+.courses .course-descriptions p{
+  text-align: center;
+  font-weight: 200;
+  color: #464646;
+}
+.courses .course-descriptions .button{
+  font-weight: 500;
+  text-align: center;
+}
+
+//benefits
+
+.benefits{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.benefits{
+  text-align: center;
+}
+.benefits img{
+  max-height: 100px;
+  padding-bottom: 15px;
 }
 
 //medium screen and up
@@ -327,4 +377,9 @@
 //universal
 .round{
   border-radius: 1000px;
+}
+.see-through{
+  background-color: Transparent;
+  color: #3adb76;
+  border-color: #3adb76;
 }
