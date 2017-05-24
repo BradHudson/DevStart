@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+//the old page
 hr {
   padding-bottom: 15px;
   //padding-bottom: 30px;
@@ -225,4 +228,53 @@ h1, h2, h3, h4, h5, p {
 
 #explanation{
   font-size: 16px;
+}
+
+
+//-------------The redesign-----------------------
+//nav bar
+.nav-bar .row{
+  margin: 0px;
+}
+.nav-bar img{
+  max-height: 80px;
+  float: left;
+}
+.nav-bar h3{
+  color: #d80202;
+  padding-top: 20px;
+}
+.nav-bar .heavy{
+  font-weight: 500;
+}
+.nav-bar .button{
+  float: right;
+  margin-top: 20px;
+}
+
+//medium screen and up
+@media only screen and (min-width: 40.063em) {
+  .nav-bar .button-container{
+    padding: 0px;
+  }
+}
+
+//small screen only
+@media only screen and (max-width: 40em) {
+
+.nav-bar h3{
+  font-size: 25px;
+  padding-top: 25px;
+}
+
+.nav-bar .button-container{
+  padding: 0px;
+  padding-right: 10px;
+}
+
+}
+
+//universal
+.round{
+  border-radius: 1000px;
 }
