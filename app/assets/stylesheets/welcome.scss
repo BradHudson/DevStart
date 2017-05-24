@@ -239,6 +239,7 @@
 .nav-bar img{
   max-height: 80px;
   float: left;
+  margin-top: 5px;
 }
 .nav-bar h3{
   font-weight: 100;
@@ -250,7 +251,7 @@
 }
 .nav-bar .button{
   float: right;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 //hero image
@@ -315,6 +316,9 @@
 .courses .course-descriptions{
   text-align: center;
 }
+.courses img{
+  margin-top: 15px;
+}
 .courses .course-descriptions h4{
   text-align: center;
   color: #464646;
@@ -341,6 +345,44 @@
 .benefits img{
   max-height: 100px;
   padding-bottom: 15px;
+}
+
+//team
+.team{
+  background-color: #DFECFB;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team h3{
+  margin-bottom: 15px;
+  text-align: center;
+  color: #464646;
+}
+.team p{
+  color: #464646;
+  font-weight: 200;
+}
+.team img{
+  border-radius: 300px;
+  max-height: 200px;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+//map
+.map{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.map p{
+  text-align: center;
+  font-weight: 500;
+  margin-top: 25px;
+}
+.map .input-field{
+  font-weight: 200;
 }
 
 //medium screen and up
@@ -372,6 +414,11 @@
     text-align: center;
   }
 
+  //map
+  .map .sign-up{
+    text-align: center;
+  }
+
 }
 
 //universal
@@ -383,3 +430,10 @@
   color: #3adb76;
   border-color: #3adb76;
 }
+
+//h1, h2, h3, h4, h5, p {
+//  font-weight: 100;
+//  color: black;
+//  font-family: "Lato script=all rev=1";
+//  font: inherit;
+//}
