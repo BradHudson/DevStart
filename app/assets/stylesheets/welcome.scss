@@ -2,233 +2,233 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-
-//the old page
-hr {
-  padding-bottom: 15px;
-  //padding-bottom: 30px;
-}
-
-.alert-error{
-  color: white;
-  background-color: red;
-  font-size: 1.5em;
-  text-align: center;
-}
-
-.bump{
-  padding-bottom: 10px;
-}
-
-h1, h2, h3, h4, h5, p {
-  font-weight: 100;
-  color: black;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-}
-
-//Top Area
-
-.nav-list{
-  display: inline;
-  list-style-type: none;
-  padding-right: 20px;
-}
-
-#image{
-  //margin-top: 40px;
-  float: left;
-}
-
-#top-image{
-  padding-top: 30px;
-  padding-bottom: 40px;
-  //margin-left: 20px;
-}
-
-#signup-button{
-  margin-top: 20px;
-}
-
-#signup-button input{
-  width: 100%;
-}
-
-.top-area{
-  //background-image: url("https://s3.amazonaws.com/media.launchrockstaging.com/assets/sites/site-7bgg87nssq84h00oucinw4fe3/53euqh-product-background.jpg");
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  opacity: 1;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-position: 50% 50%;
-}
-
-.site-block{
-  padding-right: 0px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-}
-
-.top-area .button {
-  font-weight: bold;
-  font-size: 1em;
-
-}
-
-.top-area h1 {
-  font-size: 4.375rem;
-  font-weight: 700;
-  color: #FF5A5F;
-}
-
-.top-location {
-  border-right-style: ridge;
-}
-
-.top-location h1{
-  font-weight: 100;
-  color: black;
-  font-size: 3rem;
-}
-
-.input-field{
-  margin-top: 1em;
-}
-
-//successful signup
-
-.successful-signup h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  color: #FF5A5F;
-}
-
-.successful-signup h3{
-  font-size: 2em;
-}
-
-.successful-signup .button {
-  width: 100%;
-}
-
-.successful-signup p{
-  font-size: 1.5rem;
-}
-
-//end successful signup
-
-.top-area .bigger-p {
-  font-size: 30px;
-}
-
-.top-area p {
-  font-size: 24px;
-  font-weight: 300;
-}
-
-.headers{
-  //margin-left: 20px;
-}
-
-.reason-header .columns{
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.reason-header .image{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-//Middle Area
-
-.middle-area h1 {
-  font-size: 3.750rem;
-  text-align: center;
-}
-
-.middle-area h4 {
-  font-weight: 700;
-  color: #FF5A5F;
-}
-
-.profile h4{
-  color: black;
-  font-weight: 300;
-  text-align: center;
-}
-
-.profile img{
-  min-height: 250px;
-  min-width: 200px;
-  max-height: 270px;
-  max-width: 300px;
-  display: block;
-  margin: auto;
-}
-
-.locations h2{
-  text-align: center;
-}
-
-.locations p{
-  text-align: center;
-}
-
-.bold{
-  font-weight: 400;
-}
-
-.contact-us{
-  text-align: center;
-}
-
-//medium screen and up
-@media only screen and (min-width: 40.063em) {
-  .site-block {
-    margin-top: 100px;
-  }
-
-  .top-area h1 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  //successful signup medium up
-
-  .successful-signup {
-    margin-top: 100px;
-  }
-
-  .successful-signup h1 {
-    font-size: 4.375rem;
-    font-weight: 700;
-    color: #FF5A5F;
-  }
-
-  //end successful medium up
-}
-
-//end medium
-
-//small screen only
-@media only screen and (max-width: 40em) {
-
-  .middle-area h1{
-    font-size: 2.3rem;
-  }
-
-  .top-area h2{
-    font-size: 2rem;
-  }
-
-}
-
-#explanation{
-  font-size: 16px;
-}
+//
+//
+////the old page
+//hr {
+//  padding-bottom: 15px;
+//  //padding-bottom: 30px;
+//}
+//
+//.alert-error{
+//  color: white;
+//  background-color: red;
+//  font-size: 1.5em;
+//  text-align: center;
+//}
+//
+//.bump{
+//  padding-bottom: 10px;
+//}
+//
+//h1, h2, h3, h4, h5, p {
+//  font-weight: 100;
+//  color: black;
+//  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
+//}
+//
+////Top Area
+//
+//.nav-list{
+//  display: inline;
+//  list-style-type: none;
+//  padding-right: 20px;
+//}
+//
+//#image{
+//  //margin-top: 40px;
+//  float: left;
+//}
+//
+//#top-image{
+//  padding-top: 30px;
+//  padding-bottom: 40px;
+//  //margin-left: 20px;
+//}
+//
+//#signup-button{
+//  margin-top: 20px;
+//}
+//
+//#signup-button input{
+//  width: 100%;
+//}
+//
+//.top-area{
+//  //background-image: url("https://s3.amazonaws.com/media.launchrockstaging.com/assets/sites/site-7bgg87nssq84h00oucinw4fe3/53euqh-product-background.jpg");
+//  background-repeat: repeat;
+//  background-attachment: scroll;
+//  background-size: cover;
+//  opacity: 1;
+//  background-position-x: 50%;
+//  background-position-y: 50%;
+//  background-position: 50% 50%;
+//}
+//
+//.site-block{
+//  padding-right: 0px;
+//  padding-bottom: 30px;
+//  padding-left: 10px;
+//}
+//
+//.top-area .button {
+//  font-weight: bold;
+//  font-size: 1em;
+//
+//}
+//
+//.top-area h1 {
+//  font-size: 4.375rem;
+//  font-weight: 700;
+//  color: #FF5A5F;
+//}
+//
+//.top-location {
+//  border-right-style: ridge;
+//}
+//
+//.top-location h1{
+//  font-weight: 100;
+//  color: black;
+//  font-size: 3rem;
+//}
+//
+//.input-field{
+//  margin-top: 1em;
+//}
+//
+////successful signup
+//
+//.successful-signup h1 {
+//  font-size: 3.5rem;
+//  font-weight: 700;
+//  color: #FF5A5F;
+//}
+//
+//.successful-signup h3{
+//  font-size: 2em;
+//}
+//
+//.successful-signup .button {
+//  width: 100%;
+//}
+//
+//.successful-signup p{
+//  font-size: 1.5rem;
+//}
+//
+////end successful signup
+//
+//.top-area .bigger-p {
+//  font-size: 30px;
+//}
+//
+//.top-area p {
+//  font-size: 24px;
+//  font-weight: 300;
+//}
+//
+//.headers{
+//  //margin-left: 20px;
+//}
+//
+//.reason-header .columns{
+//  padding-left: 0;
+//  padding-right: 0;
+//}
+//
+//.reason-header .image{
+//  margin-left: 10px;
+//  margin-right: 10px;
+//}
+//
+////Middle Area
+//
+//.middle-area h1 {
+//  font-size: 3.750rem;
+//  text-align: center;
+//}
+//
+//.middle-area h4 {
+//  font-weight: 700;
+//  color: #FF5A5F;
+//}
+//
+//.profile h4{
+//  color: black;
+//  font-weight: 300;
+//  text-align: center;
+//}
+//
+//.profile img{
+//  min-height: 250px;
+//  min-width: 200px;
+//  max-height: 270px;
+//  max-width: 300px;
+//  display: block;
+//  margin: auto;
+//}
+//
+//.locations h2{
+//  text-align: center;
+//}
+//
+//.locations p{
+//  text-align: center;
+//}
+//
+//.bold{
+//  font-weight: 400;
+//}
+//
+//.contact-us{
+//  text-align: center;
+//}
+//
+////medium screen and up
+//@media only screen and (min-width: 40.063em) {
+//  .site-block {
+//    margin-top: 100px;
+//  }
+//
+//  .top-area h1 {
+//    margin-top: 20px;
+//    margin-bottom: 10px;
+//  }
+//
+//  //successful signup medium up
+//
+//  .successful-signup {
+//    margin-top: 100px;
+//  }
+//
+//  .successful-signup h1 {
+//    font-size: 4.375rem;
+//    font-weight: 700;
+//    color: #FF5A5F;
+//  }
+//
+//  //end successful medium up
+//}
+//
+////end medium
+//
+////small screen only
+//@media only screen and (max-width: 40em) {
+//
+//  .middle-area h1{
+//    font-size: 2.3rem;
+//  }
+//
+//  .top-area h2{
+//    font-size: 2rem;
+//  }
+//
+//}
+//
+//#explanation{
+//  font-size: 16px;
+//}
 
 
 //-------------The redesign-----------------------
@@ -241,6 +241,7 @@ h1, h2, h3, h4, h5, p {
   float: left;
 }
 .nav-bar h3{
+  font-weight: 100;
   color: #d80202;
   padding-top: 20px;
 }
@@ -252,8 +253,49 @@ h1, h2, h3, h4, h5, p {
   margin-top: 20px;
 }
 
+//hero image
+.hero-image{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #3A3D5A;
+}
+.hero-image h2{
+  color: white;
+  font-style: italic;
+  text-align: center;
+}
+.hero-image h1{
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+.hero-image p{
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+//pitch
+
+.pitch{
+  text-align: center;
+  padding-top: 20px;
+}
+.pitch img{
+  max-height: 100px;
+}
+.pitch .pitch-text{
+  font-size: 20px;
+  font-weight: 200;
+}
+.pitch .starting-date{
+  font-weight: 500;
+  color: #3A3D5A;
+}
+
 //medium screen and up
 @media only screen and (min-width: 40.063em) {
+  //nav-bar
   .nav-bar .button-container{
     padding: 0px;
   }
@@ -261,16 +303,24 @@ h1, h2, h3, h4, h5, p {
 
 //small screen only
 @media only screen and (max-width: 40em) {
+  //nav-bar
+  .nav-bar h3{
+    font-size: 25px;
+    padding-top: 25px;
+  }
 
-.nav-bar h3{
-  font-size: 25px;
-  padding-top: 25px;
-}
+  .nav-bar .button-container{
+    padding: 0px;
+    padding-right: 10px;
+  }
 
-.nav-bar .button-container{
-  padding: 0px;
-  padding-right: 10px;
-}
+  //hero-image
+  .hero-image h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+  }
 
 }
 
