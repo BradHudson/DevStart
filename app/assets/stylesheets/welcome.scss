@@ -31,7 +31,7 @@
 //-------------The redesign-----------------------
 //nav bar
 .nav-bar .row{
-  margin: 0px;
+  max-width: 100%;
 }
 .nav-bar img{
   max-height: 80px;
@@ -187,6 +187,10 @@
   //nav-bar
   .nav-bar .button-container{
     padding: 0px;
+  }
+
+  .nav-bar .button{
+    margin-right: 2em;
   }
 }
 
