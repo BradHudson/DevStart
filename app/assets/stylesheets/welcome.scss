@@ -1,10 +1,8 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-hr {
-  padding-bottom: 15px;
-  //padding-bottom: 30px;
+*{
+  font-family: "Lato";
 }
 
 .alert-error{
@@ -14,88 +12,7 @@ hr {
   text-align: center;
 }
 
-.bump{
-  padding-bottom: 10px;
-}
-
-h1, h2, h3, h4, h5, p {
-  font-weight: 100;
-  color: black;
-  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif !important;
-}
-
-//Top Area
-
-.nav-list{
-  display: inline;
-  list-style-type: none;
-  padding-right: 20px;
-}
-
-#image{
-  //margin-top: 40px;
-  float: left;
-}
-
-#top-image{
-  padding-top: 30px;
-  padding-bottom: 40px;
-  //margin-left: 20px;
-}
-
-#signup-button{
-  margin-top: 20px;
-}
-
-#signup-button input{
-  width: 100%;
-}
-
-.top-area{
-  //background-image: url("https://s3.amazonaws.com/media.launchrockstaging.com/assets/sites/site-7bgg87nssq84h00oucinw4fe3/53euqh-product-background.jpg");
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-size: cover;
-  opacity: 1;
-  background-position-x: 50%;
-  background-position-y: 50%;
-  background-position: 50% 50%;
-}
-
-.site-block{
-  padding-right: 0px;
-  padding-bottom: 30px;
-  padding-left: 10px;
-}
-
-.top-area .button {
-  font-weight: bold;
-  font-size: 1em;
-
-}
-
-.top-area h1 {
-  font-size: 4.375rem;
-  font-weight: 700;
-  color: #FF5A5F;
-}
-
-.top-location {
-  border-right-style: ridge;
-}
-
-.top-location h1{
-  font-weight: 100;
-  color: black;
-  font-size: 3rem;
-}
-
-.input-field{
-  margin-top: 1em;
-}
-
 //successful signup
-
 .successful-signup h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -115,114 +32,261 @@ h1, h2, h3, h4, h5, p {
 }
 
 //end successful signup
-
-.top-area .bigger-p {
-  font-size: 30px;
+//-------------The redesign-----------------------
+//nav bar
+.nav-bar .row{
+  max-width: 100%;
+}
+.nav-bar img{
+  max-height: 80px;
+  float: left;
+  margin-top: 5px;
+}
+.nav-bar h3{
+  font-weight: 100;
+  color: #d80202;
+  padding-top: 20px;
+}
+.nav-bar .heavy{
+  font-weight: 500;
+}
+.nav-bar .button{
+  float: right;
+  margin-top: 10px;
 }
 
-.top-area p {
-  font-size: 24px;
-  font-weight: 300;
+//hero image
+.hero-image{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url("Intro-Background.svg") #393C5B;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-.headers{
-  //margin-left: 20px;
+.hero-image h2{
+  color: white;
+  font-style: italic;
+  text-align: center;
 }
-
-.reason-header .columns{
-  padding-left: 0;
-  padding-right: 0;
+.hero-image h1{
+  font-weight: 400;
+  color: white;
+  text-align: center;
 }
-
-.reason-header .image{
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-//Middle Area
-
-.middle-area h1 {
-  font-size: 3.750rem;
+.hero-image p{
+  font-weight: 400;
+  color: white;
   text-align: center;
 }
 
-.middle-area h4 {
-  font-weight: 700;
-  color: #FF5A5F;
+//pitch
+
+.pitch{
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pitch img{
+  max-height: 100px;
+}
+.pitch .pitch-text{
+  font-size: 20px;
+  font-weight: 200;
+}
+.pitch .starting-date{
+  font-weight: 500;
+  color: #3A3D5A;
 }
 
-.profile h4{
-  color: black;
-  font-weight: 300;
+//courses
+.courses{
+  background-color: #DFECFB;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.courses .course-intro{
   text-align: center;
 }
+.courses .course-intro h3{
+  color: #464646;
+}
+.courses .course-intro p{
+  color: #464646;
+  font-weight: 200;
+}
+.courses .course-descriptions{
+  text-align: center;
+}
+.courses img{
+  margin-top: 15px;
+}
+.courses .course-descriptions h4{
+  text-align: center;
+  color: #464646;
+}
+.courses .course-descriptions p{
+  text-align: center;
+  font-weight: 200;
+  color: #464646;
+}
+.courses .course-descriptions .button{
+  font-weight: 500;
+  text-align: center;
+}
+.courses .money{
+  font-size: 1.5em;
+}
+.courses .money-strike{
+  text-decoration: line-through;
+}
 
-.profile img{
-  min-height: 250px;
-  min-width: 200px;
-  max-height: 270px;
+//benefits
+
+.benefits{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.benefits{
+  text-align: center;
+}
+.benefits img{
+  max-height: 100px;
+  padding-bottom: 15px;
+}
+
+//team
+.team{
+  background-color: #DFECFB;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.team h3{
+  margin-bottom: 15px;
+  text-align: center;
+  color: #464646;
+}
+.team p{
+  color: #464646;
+  font-weight: 200;
+}
+.team img{
+  border-radius: 300px;
+  max-height: 200px;
   max-width: 300px;
   display: block;
   margin: auto;
+  margin-bottom: 20px;
 }
 
-.locations h2{
+//map
+.map{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.map p{
   text-align: center;
+  font-weight: 500;
+  margin-top: 25px;
 }
-
-.locations p{
-  text-align: center;
-}
-
-.bold{
-  font-weight: 400;
-}
-
-.contact-us{
-  text-align: center;
+.map .input-field{
+  font-weight: 200;
 }
 
 //medium screen and up
 @media only screen and (min-width: 40.063em) {
-  .site-block {
-    margin-top: 100px;
+  //nav-bar
+  .nav-bar .button-container{
+    padding: 0px;
   }
 
-  .top-area h1 {
-    margin-top: 20px;
-    margin-bottom: 10px;
+  .nav-bar .button{
+    margin-right: 2em;
   }
-
-  //successful signup medium up
-
-  .successful-signup {
-    margin-top: 100px;
-  }
-
-  .successful-signup h1 {
-    font-size: 4.375rem;
-    font-weight: 700;
-    color: #FF5A5F;
-  }
-
-  //end successful medium up
 }
-
-//end medium
 
 //small screen only
 @media only screen and (max-width: 40em) {
-
-  .middle-area h1{
-    font-size: 2.3rem;
+  //nav-bar
+  .nav-bar h3{
+    font-size: 25px;
+    padding-top: 25px;
   }
 
-  .top-area h2{
-    font-size: 2rem;
+  .nav-bar .button-container{
+    padding: 0px;
+    padding-right: 10px;
+  }
+
+  //hero-image
+  .hero-image h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+  }
+
+  //map
+  .map .sign-up{
+    text-align: center;
   }
 
 }
 
-#explanation{
-  font-size: 16px;
+//universal
+.round{
+  border-radius: 1000px;
+}
+.see-through{
+  background-color: Transparent;
+  color: #3adb76;
+  border-color: #3adb76;
+}
+
+.full-width{
+  width: 100%;
+}
+
+//h1, h2, h3, h4, h5, p {
+//  font-weight: 100;
+//  color: black;
+//  font-family: "Lato script=all rev=1";
+//  font: inherit;
+//}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 100%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }

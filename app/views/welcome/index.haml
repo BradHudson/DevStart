@@ -1,155 +1,140 @@
-.top-area.site-block
+.nav-bar
   .row
-    .small-4.show-for-small-only.end.columns#top-image
-      = image_tag("logo.png")
+    .small-8.medium-3.columns
+      = image_tag("DevStart-Logo.svg")
+    .small-4.medium-4.medium-offset-5.columns.button-container
+      .button.round.success.modal-click
+        Sign Up Now!
+.hero-image
   .row
-    .small-12.medium-6.columns.headers
-      %p.bigger-p
+    .small-12.columns
+      %h2
         Introducing
       %h1
-        Dev Start
+        DEV START
       %p
         Affordable and Professional Computer Programming Training for Young Adults in John's Creek.
-      %p#explanation
+.pitch
+  .row
+    .small-12.columns
+      = image_tag("DevStart-Logo-notext.svg")
+    .small-12.medium-8.medium-offset-2.end.columns
+      %p.pitch-text
         Would you rather have a professional bodybuilder be your personal trainer or somebody who earned their certification online?
         We believe the same should go for learning how to program. Dev Start is a team of professionals who are ready to prepare your children for a career in programming.
-    .small-12.hide-for-small-only.medium-4.columns#image
-      = image_tag("logo.png")
-  %hr
-  .row
-    .small-12.medium-6.columns.hide-for-small-only.top-location
-      %h1.bump
-        Starting
-        %span.bold
-          June 17th
-        at the Johns Creek Arts Center
+      %p.starting-date
+        Starting June 17th at the John's Creek Arts Center!
+.courses
+  .row.course-intro
+    .small-12.medium-8.medium-offset-2.end.columns
+      %h3
+        Course Information & Pricing
       %p
-        = image_tag("http://i152.photobucket.com/albums/s182/Charles_Walls/JohnsCreekArtsCenterlogo.jpg")
+        We focus on Scratch, the programming language developed at the MIT Media Lab. With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community. Scratch helps young people learn to think creatively, reason systematically, and work collaboratively — essential skills for life in the 21st century.
+  .row.course-descriptions
     .small-12.medium-6.columns
-      .small-12.columns
-        %h2
-          Reserve Your Spot Today!
+      = image_tag("FutureEngineer-Illustration.svg")
+      %h5
+        Future Engineer (6 weeks)
+      .money
+        %span.money-strike
+          $500
+        &nbsp;&nbsp;$300
+      %p
+        Over the course of 6 weeks, develop a great understanding of Programming through Scratch and create numerous projects to show off what you have learned.
+        You will have the experience and preparation necessary to tackle languages such as Python or Javascript.
+    .small-12.medium-6.columns
+      = image_tag("HelloWorld-Illustration.svg")
+      %h5
+        Hello World! (2 weeks)
+      .money
+        $150
+      %p
+        Over the course of 2 weeks, receive a basic understanding of Programming through Scratch and what you are capable of accomplishing with it. Build a small scratch program to show off what you have learned.
+    .small-12.columns
+      .button.round.success.modal-click
+        Sign Up For A Course!
+.benefits
+  .row
+    .small-12.medium-4.columns
+      = image_tag("ProfessionalInstructors-Illustration.svg")
+      %h5
+        Professional Instructors
+      %p
+        Learning how to program from professionals will properly prepare you for software development in the real world. We are a team of software engineers with computer science backgrounds who currently work for Careerbuilder. We have a passion for building great software and want to inspire the next generation of engineers and programmers.
+    .small-12.medium-4.columns
+      = image_tag("ExcellentEducation-Illustration.svg")
+      %h5
+        Excellent Education
+      %p
+        Learning how to program from professionals will properly prepare you for software development in the real world. We are a team of software engineers with computer science backgrounds who currently work for Careerbuilder. We have a passion for building great software and want to inspire the next generation of engineers and programmers.
+    .small-12.medium-4.columns
+      = image_tag("AffordableDependable-Illustration.svg")
+      %h5
+        Affordable & Dependable
+      %p
+        Learning how to program from professionals will properly prepare you for software development in the real world. We are a team of software engineers with computer science backgrounds who currently work for Careerbuilder. We have a passion for building great software and want to inspire the next generation of engineers and programmers.
+    .small-12.columns
+      .button.round.see-through.modal-click
+        Contact Us For More Info
+.team
+  .row
+    .small-12.columns
+      %h3
+        Meet The Team
+    .small-12.medium-4.columns
+      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/x5ysbh-bradimage3.jpg")
+      %p
+        Brad is a software engineer for Careerbuilder. He received his undergraduate from the University of North Georgia.
+        He has experience with Ruby on Rails, C#, and AWS.
+    .small-12.medium-4.columns
+      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/74hh3e-yudiimage.jpg")
+      %p
+        Yudi is a software engineer for Careerbuilder. He received his undergraduate from the University of Alabama.
+        He is currently pursuing his masters degree in computer science from Georgia Tech.
+    .small-12.medium-4.columns
+      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/0xqzaw-naveenimage.jpg")
+      %p
+        Naveen is a mobile apps software engineer for Careerbuilder. He received his undergraduate from Georgia Tech and is
+        currently one of two engineers who maintain and build the Careerbuilder apps for both IOS and Android.
+.map
+  .small-12.medium-3.medium-offset-1.columns
+    %iframe{:allowfullscreen => "", :frameborder => "0", :height => "350", :src => "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13223.829529443536!2d-84.1758161!3d34.0449643!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4620936c4b877464!2sJohns+Creek+Arts+Center!5e0!3m2!1sen!2sus!4v1495596077962", :style => "border:0", :width => "600"}
+  .small-10.small-offset-1.medium-4.medium-offset-4.end.columns
+    .row
       = form_for(@user, url: signup_path) do |f|
         .small-12.columns
           = render 'shared/error_messages'
         .small-12.input-field.columns
-          = 'Name(Required)'
+          = '*Your Name'
           = f.text_field :name, class: 'form-control'
         .small-12.input-field.columns
-          = 'Email(Required)'
+          = '*Email'
           = f.email_field :email, class: 'form-control'
         .small-12.input-field.columns
           = 'Phone Number'
           = f.phone_field :phone_number, class: 'form-control'
-        .small-12.columns#signup-button
-          = f.submit "SIGN UP", class: "button"
-      .row
-        .small-10.small-centered.columns
-          %h3
-            Contact us at any time by emailing us at
-            %a{:href => "mailto:support@devstart.co", :target => "_top"} support@devstart.co
-%hr
-.middle-area
-  .row.locations.show-for-small-only
-    .small-12.medium-6.medium-centered.columns
-      %h1.bump
-        Starting
-        %span.bold
-          June 17th
-        at the Johns Creek Arts Center
-      %p
-        = image_tag("http://i152.photobucket.com/albums/s182/Charles_Walls/JohnsCreekArtsCenterlogo.jpg")
-    %hr
-  .row
-    .small-12.columns
-      %h1.bump
-        Class Information & Pricing
-    .small-12.medium-4.columns
-      = image_tag("https://assets.pcmag.com/media/images/439138-scratch-from-mit.jpg?thumb=y&width=333&height=245")
-    .small-12.medium-8.columns
-      %p
-        We focus on Scratch, the programming language developed at the MIT Media Lab. With Scratch, you can program your own interactive stories, games, and animations — and share your creations with others in the online community. Scratch helps young people learn to think creatively, reason systematically, and work collaboratively — essential skills for life in the 21st century.
-      %h2
-        Options:
-      %ul
-        %li
-          Future Engineer Package (6 weeks) -
-          %s
-            $500
-          &nbsp;&nbsp;$300
-          %p
-            Develop a great understanding of Programming through Scratch and create numerous projects to show off what you have learned.
-            You will have the experience and preparation necessary to tackle languages such as Python or Javascript.
-        %li
-          Hello World! Introductory Package (2 weeks) - $150
-          %p
-            Receive a basic understanding of Programming through Scratch and what you are capable of accomplishing with it. Build a small scratch program to show off what you have learned.
-    %hr
-  .row
-    .small-12.small-centered.columns
-      %h1.bump
-        Why Choose Dev Start?
-  .reasons
-    .row
-      .small-12.medium-4.columns
-        .row.reason-header
-          .small-1.columns.image
-            = image_tag("https://cdn0.iconfinder.com/data/icons/back-to-school/90/school-learn-study-teacher-teaching-512.png")
-          .small-10.end.columns
-            %h4
-              Professional Instructors
-        %p
-          Learning how to program from professionals will properly prepare you for software development in the real world. We are a team of software engineers with computer science backgrounds who currently work for Careerbuilder. We have a passion for building great software and want to inspire the next generation of engineers and programmers.
-      .small-12.medium-4.columns
-        .row.reason-header
-          .small-1.columns.image
-            = image_tag("http://media.rusbase.com/upload_tmp/use4.png")
-          .small-10.end.columns
-            %h4
-              Excellent Education
-        %p
-          We will be teaching from verified courses and resources that are used at major universities such as MIT.
-          This will give you a foundation to pursue any area of technology. We want to see each and every student succeed and will be tailoring the education to the student.
-      .small-12.medium-4.columns
-        .row.reason-header
-          .small-1.columns.image
-            = image_tag("http://www.myashevillerealestate.com/images/cms/148/photo-1.png")
-          .small-10.end.columns
-            %h4
-              Affordable and Dependable
-        %p
-          Our goal is to inspire more young adults to go into technology and give them a foundation that will help them succeed.
-          We are going to make these courses both affordable and excellent. Contact us today!
-  %hr
-  .row
-    .small-12.medium-6.medium-centered
-      %h1.bump
-        Meet the Team
-  .row
-    .small-12.medium-4.columns.profile
-      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/x5ysbh-bradimage3.jpg")
-      %h4
-        Brad Hudson
-      %p
-        Brad is a software engineer for Careerbuilder. He received his undergraduate from the University of North Georgia.
-        He has experience with Ruby on Rails, C#, and AWS.
-    .small-12.medium-4.columns.profile
-      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/74hh3e-yudiimage.jpg")
-      %h4
-        Yudi Singh
-      %p
-        Yudi is a software engineer for Careerbuilder. He received his undergraduate from the University of Alabama.
-        He is currently pursuing his masters degree in computer science from Georgia Tech.
-    .small-12.medium-4.end.columns.profile
-      = image_tag("https://s3.amazonaws.com/media.launchrock.com/assets/sites/site-ez6ps65061biekqm3zigtpokn/0xqzaw-naveenimage.jpg")
-      %h4
-        Naveen Chegireddy
-      %p
-        Naveen is a mobile apps software engineer for Careerbuilder. He received his undergraduate from Georgia Tech and is
-        currently one of two engineers who maintain and build the Careerbuilder apps for both IOS and Android.
-  %hr
-    .row
-      .small-10.small-centered.columns
-        %h3.contact-us
-          Contact us at any time by emailing us at
-          %a{:href => "mailto:support@devstart.co", :target => "_top"} support@devstart.co
+        .small-12.columns.sign-up
+          = f.submit "Sign Up Now!", class: "button round success full-width"
+  .small-12.columns
+    %p.contact-us
+      Contact us at any time by emailing us at
+      %a{:href => "mailto:support@devstart.co", :target => "_top"} support@devstart.co
+    #myModal.modal
+      .small-12.medium-8.medium-centered.columns
+        .row.modal-content
+          %span.close ×
+          = form_for(@user, url: signup_path) do |f|
+            .small-12.columns
+              = render 'shared/error_messages'
+            .small-12.input-field.columns
+              = '*Your Name'
+              = f.text_field :name, class: 'form-control'
+            .small-12.input-field.columns
+              = '*Email'
+              = f.email_field :email, class: 'form-control'
+            .small-12.input-field.columns
+              = 'Phone Number'
+              = f.phone_field :phone_number, class: 'form-control'
+            .small-12.columns.sign-up
+              = f.submit "Sign Up Now!", class: "button round success full-width"

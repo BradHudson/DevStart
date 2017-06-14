@@ -1,3 +1,12 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+$(document).ready ->
+	$('.modal-click').click ->
+		document.getElementsByClassName('modal')[0].style.display = 'block'
+		return
+	window.onclick = (event) ->
+		if event.target == document.getElementsByClassName('modal')[0]
+			document.getElementsByClassName('modal')[0].style.display = 'none'
+		return
+	$('.close').click ->
+		document.getElementsByClassName('modal')[0].style.display = 'none'
+		return
+	return
