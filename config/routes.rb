@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   get '/users', to: 'users#list'
   #resources :users
   resources :posts
+  get '/blog', to: 'posts#index'
 end

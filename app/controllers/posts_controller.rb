@@ -48,7 +48,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    binding.pry
     params.require(:post).permit(:title, :body)
   end
 
