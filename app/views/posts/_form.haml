@@ -1,0 +1,10 @@
+= javascript_include_tag Ckeditor.cdn_url
+
+= form_for @post do |f|
+  = f.label :title, 'Title of Post:'
+  = f.text_field :title
+  %br/
+  = f.label :body, 'Body:'
+  = f.cktext_area :body
+  %br/
+  = f.submit
