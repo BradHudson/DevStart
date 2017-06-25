@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   root 'welcome#index'
   get '/', to: 'welcome#index'
   get '/success', to: 'welcome#success'
