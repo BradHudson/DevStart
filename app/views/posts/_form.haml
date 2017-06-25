@@ -1,0 +1,8 @@
+= form_for @post do |f|
+  = f.label :title, 'Title of Post:'
+  = f.text_field :title
+  %br/
+  = f.label :body, 'Body:'
+  = f.text_field :body
+  %br/
+  = f.submit
