@@ -1,5 +1,5 @@
-%li= link_to 'Logout', destroy_admin_session_path, :method => :delete
-
+-#%li= link_to 'Logout', destroy_admin_session_path, :method => :delete
+%li= link_to 'Sign in with Yahoo', admin_yahoo_omniauth_authorize_path
 .row
   .small-12.columns
     - @posts.each do |post|

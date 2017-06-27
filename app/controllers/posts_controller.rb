@@ -1,9 +1,15 @@
+
 class PostsController < ApplicationController
   before_action :find_post, only: [:edit, :update, :show, :delete]
   before_action :authenticate_admin!, except: [:index, :show]
 
   def index
     @posts = Post.all
+    # @yahoo = yahoo
+  end
+
+  def omniauth_callbacks
+
   end
 
   def new
@@ -47,6 +53,24 @@ class PostsController < ApplicationController
   end
 
   private
+
+  def yahoo
+    oauth_client = OAuth2::Client.new(ENV['YAHOO_CLIENT'], ENV['YAHOO_SECRET'], {
+        site: 'https://api.login.yahoo.com',
+        authorize_url: '/oauth2/request_auth',
+        token_url: '/oauth2/get_token',
+    })
+
+
+    auth = "Basic #{Base64.strict_encode64("#{ENV['YAHOO_CLIENT']}:#{ENV['YAHOO_SECRET']}")}"
+
+
+    new_token = oauth_client.get_token({
+                                           redirect_uri: 'http://www.devstart.co',
+                                           refresh_token: YOUR_REFRESH_TOKEN,
+                                           grant_type: 'refresh_token',
+                                           headers: { 'Authorization' => auth } })
+  end
 
   def post_params
     params.require(:post).permit(:title, :body)

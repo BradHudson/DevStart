@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admins
+  devise_for :admins, :controllers => { :omniauth_callbacks => "admins/omniauth_callbacks" }
   root 'welcome#index'
   get '/', to: 'welcome#index'
   get '/success', to: 'welcome#success'
