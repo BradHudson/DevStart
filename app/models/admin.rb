@@ -25,6 +25,11 @@ class Admin < ApplicationRecord
       # user.skip_confirmation!
     end
 
+    Reach back out to PS and see if he can provide any information backing this as a general Matrix thing.
+        Especially looking for network diagnostics and if he sees an uptick in these issues at a specific date/time. Then reach back out to PI w/ that data, and include PS dude on it.
+
+        Check historical data (Newrelic maintains a few weeks) and see when this started (exact time too), then reach out to Jobs Development and see if they can take a look at the read timeouts for search/details, especially if there were any changes made at that time.
+
     @token = auth["credentials"]["token"]
 
     binding.pry
@@ -32,6 +37,7 @@ class Admin < ApplicationRecord
     team = 4
     scoreboard_url = "https://fantasysports.yahooapis.com/fantasy/v2/league/359.l.101698/scoreboard;week=#{ week_number }"
     players_url =  "https://fantasysports.yahooapis.com/fantasy/v2/team/359.l.101698.t.#{ team }/players"
+    roster_per_week = "https://fantasysports.yahooapis.com/fantasy/v2/team/359.l.101698.t.9/roster;week=10"
 
     # query = {
     #     "method"     => "neworder",
